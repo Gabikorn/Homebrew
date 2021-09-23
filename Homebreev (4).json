@@ -1,0 +1,526 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "StarstormHomebreev",
+				"abbreviation": "HB",
+				"full": "Homebreev",
+				"version": "0.0.2",
+				"url": "https://github.com/TheGiddyLimit/homebrew",
+				"authors": [
+					"Starstorm"
+				],
+				"convertedBy": [
+					"Starstorm"
+				],
+				"color": "007DFA"
+			}
+		],
+		"dateAdded": 1631965456,
+		"dateLastModified": 1631965456
+	},
+	"monster": [
+		{
+			"name": "Gnoll Vampire",
+			"source": "StarstormHomebreev",
+			"page": 1,
+			"size": "M",
+			"type": {
+				"type": "undead",
+				"tags": [
+					"shapechanger"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d10 + 80",
+				"average": 168
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 20,
+			"dex": 20,
+			"con": 20,
+			"int": 5,
+			"wis": 15,
+			"cha": 7,
+			"save": {
+				"dex": "+10",
+				"con": "+10",
+				"wis": "+7"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 17,
+			"resist": [
+				"cold",
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"languages": [
+				"Abyssal",
+				"Gnoll"
+			],
+			"cr": "13",
+			"trait": [
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"The vampire has advantage on Wisdom (Perception) checks that rely on smell."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The vampire regains 15 hit points at the start of its turn if it isn't in sunlight or running water. If the vampire takes radiant damage or damage from holy water, this trait doesn't function at the start of the vampire's next turn."
+					]
+				},
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"If the vampire isn't in sunlight, it can use its action to polymorph into a Large hyena or a Medium cloud of mist, or back into its true form.",
+						"While in hyena form, the vampire can't speak, and its walking speed is 50 feet. Its statistics, other than its size and speed, are unchanged. Anything it is wearing transforms with it, but nothing it is carrying does. It reverts to its true form if it dies.",
+						"While in mist form, the vampire can't take any actions, speak, or manipulate objects. it is weightless, has a flying speed of 20 feet, can hover, and can enter a hostile creature's space and stop there. In addition, if air can pass through a space, the mist can do so without squeezing, and it can't pass through water. It has advantage on Strength, Dexterity, and Constitution saving throws, and it is immune to all nonmagical damage, except the damage it takes from sunlight."
+					]
+				},
+				{
+					"name": "Unusual Nature",
+					"entries": [
+						"The vampire doesn't require air."
+					]
+				},
+				{
+					"name": "Vampire Weaknesses",
+					"entries": [
+						"The vampire has the following flaws:",
+						"{@i Enraged by Celestial.} If it hears words of Celestial spoken, the vampire must try to attack the source of those spoken words on its next turn. If these words come from multiple sources and from opposite directions, the vampire is {@condition restrained}. Otherwise, it moves to attack what it perceives to be the closest source.",
+						"{@i Repulsed by Perfume.} The vampire has disadvantage on melee attack rolls made against any creature wearing perfume or carrying an open container of it.",
+						"{@i Stake to the Heart.} If a piercing weapon made of wood is driven into the vampire's heart while the vampire is {@condition incapacitated}, the vampire is {@condition paralyzed} until the stake is removed.",
+						"{@i Sunlight Hypersensitivity.} The vampire takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack (Hyena or Vampire Form Only)",
+					"entries": [
+						"The vampire can use its Frightful Cackle, it then makes three attacks: one with its bite and two with its claws."
+					]
+				},
+				{
+					"name": "Bite (Hyena or Vampire Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one creature. {@h}12 ({@damage 2d6 + 5}) piercing damage plus 15 ({@damage 3d6 + 5}) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and the vampire regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. the target dies if its hit point maximum is reduced to 0."
+					]
+				},
+				{
+					"name": "Claws (Vampire Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d4 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Frightful Cackle (Hyena or Vampire Form Only)",
+					"entries": [
+						"The vampire emits a bone-chilling cackle. Each creature of the vampire's choice that is within 120 feet of the vampire and can hear its cackle must succeed on a {@dc 18} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to this vampire's Frightful Cackle for the next 24 hours."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Light Sensitivity",
+				"Regeneration",
+				"Shapechanger"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"OTH"
+			],
+			"damageTags": [
+				"P",
+				"N",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened",
+				"poisoned"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "http://wurmcw.ddns.net/5e/img/IDRotF/Gnoll Vampire.png",
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"When a gnoll's ravenous hunger is so great that it craves flesh and blood even after death, it can rise as a vampire to continue its feeding frenzy.",
+									"A gnoll vampire is a savage predator that feeds on the blood of the living. It cackles maniacally when it catches the scent of its prey and quickly moves in for the kill, tearing away flesh with its claws, gorging on meat and blood, and leaving nothing behind but bones, gristle, and the victim's blood-spattered belongings.",
+									"Gnoll vampires are indiscriminate feeders that prefer the flesh and blood of humanoids, including other gnolls. Their noses can't stand the scent of perfumes, and their ears can't abide words spoken aloud in Celestial. They don't cast reflections in mirrors unless they want to.",
+									"Unlike normal vampires, gnoll vampires don't have coffins where they rest, and they have no such places to return to when their corporeal bodies are destroyed. They are undeterred by running water, and they can enter residences without invitation. When a gnoll vampire needs to travel quickly, it adopts the form of a giant, emaciated hyena. When it wants to catch its prey by surprise, it takes the form of a cloud of mist. After it feeds on a victim's blood, its mist form takes on a crimson hue for an hour or so before its colorlessness returns.",
+									{
+										"type": "inset",
+										"name": "Tekeli-Li and the Caves of Hunger",
+										"entries": [
+											"Tekeli-li was a {@creature Gnoll Fang of Yeenoghu||fang of Yeenoghu}, a powerful gnoll whose pack invaded Icewind Dale more than a century ago. When the gnolls' wanton slaughter of reindeer herds threatened the survival of the Reghed tribes, the tribes banded together against the gnolls and routed them in the autumn of 1333 DR. Tekeli-li and his surviving kin fled across the tundra with the Reghed tribes in pursuit.",
+											"The wounded gnolls found an icy cleft on the edge of the Reghed Glacier and hid there for the winter. To keep their leader alive, the other gnolls allowed Tekeli-li to eat them one by one, yet his hunger would not abate. Auril came upon the starving, half-frozen creature and flung Tekeli-li into an icy tomb deep within the glacier. In doing so, the Frostmaiden sought to preserve what the gnoll had become—the embodiment of winter's remorseless consumption.",
+											"Tekeli-li exists today as a gnoll vampire that hasn't fed in decades. Adventurers who use the \"{@adventure Rime of the Frostmaiden|IDRotF|23}\" to create a passage through the glacier unknowingly release the starving gnoll vampire from its icy sepulcher. For more information about Tekeli-li's lair, the Caves of Hunger, see {@adventure chapter 6|IDRotF|16}."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "http://wurmcw.ddns.net/5e/img/bestiary/IDRotF/Gnoll Vampire.jpg"
+						}
+					}
+				]
+			},
+			"shortName": "vampire",
+			"skill": {
+				"acrobatics": "+10",
+				"athletics": "+10",
+				"stealth": "+10",
+				"perception": "+7"
+			},
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"bonus": [
+				{
+					"name": "Aggressive",
+					"entries": [
+						"As a bonus action, the vampire can move up to its speed toward a hostile creature that it can see."
+					]
+				},
+				{
+					"name": "Rampage",
+					"entries": [
+						"When it reduces a creature to 0 hit points with a melee attack on its turn, the vampire can take a bonus action to move up to half its speed and make a bite attack."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Sickening Gaze",
+					"entries": [
+						"The vampire targets one humanoid it can see within 30 feet of it. If the target can see the vampire, the target must succeed on a {@dc 18} Constitution saving throw against this magic or be {@condition poisoned} for 24 hours. A creature whose saving throw is successful is immune to this vampire's Sickening Gaze for 24 hours."
+					]
+				},
+				{
+					"name": "Frenzy",
+					"entries": [
+						"The vampire can make one melee attack against a creature within 5 ft. of it."
+					]
+				},
+				{
+					"name": "Haste",
+					"entries": [
+						"The vampire can move up to its speed, but only towards a hostile creature it can see, and opportunity attacks have disadvantage against it during this move."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Retaliate",
+					"entries": [
+						"If the vampire is hit by a melee attack, it can make one bite attack against the attacker as a reaction if the attacker is within 5 ft. of it."
+					]
+				}
+			],
+			"legendaryActions": 3,
+			"legendaryGroup": {
+				"name": "Vampire",
+				"source": "MM"
+			}
+		},
+		{
+			"name": "Drakareth",
+			"source": "StarstormHomebreev",
+			"page": 2,
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"formula": "15d8 + 45",
+				"average": 112
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 60,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 6,
+			"dex": 18,
+			"con": 16,
+			"int": 20,
+			"wis": 14,
+			"cha": 15,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"resist": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"thunder",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't silvered",
+					"cond": true
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"languages": [
+				"the languages it knew in life"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"The wraith can move through other creatures and objects as if they were difficult terrain. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the wraith has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Drakareth can use his Create Shadow (if available), he then makes a Life Drain attack."
+					]
+				},
+				{
+					"name": "Life Drain",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one creature. {@h}17 ({@damage 3d8 + 4}) necrotic damage. The target must succeed on a {@dc 16} Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
+					]
+				},
+				{
+					"name": "Create Specter",
+					"entries": [
+						"Drakareth targets a humanoid within 10 feet of it that has been dead for no longer than 1 minute and died violently. The target's spirit rises as a {@creature specter} in the space of its corpse or in the nearest unoccupied space. The {@creature specter} is under the wraith's control. The wraith can have no more than seven specters under its control at one time."
+					]
+				},
+				{
+					"name": "Create Shadow {@recharge 5}",
+					"entries": [
+						"Drakareth detaches part of his form from himself, which manifests as a {@creature shadow} in an unoccupied space within 10 feet of Drakareth. The shadow is under Drakareth's control and acts after his turn. It remains for 1 minute or until it or Drakareth are reduced to 0 hit points. When destroyed, its form merges with Drakareth's form."
+					]
+				}
+			],
+			"environment": [
+				"underdark"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "http://wurmcw.ddns.net/5e/audio/bestiary/wraith.mp3"
+			},
+			"traitTags": [
+				"Incorporeal Movement",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"N",
+				"O"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "http://wurmcw.ddns.net/5e/img/MM/Wraith.png",
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"A wraith is malice incarnate, concentrated into an incorporeal form that seeks to quench all life. The creature is suffused with negative energy, and its mere passage through the world leaves nearby plants blackened and withered. Animals flee from its presence. Even small fires can be extinguished by the sucking oblivion of the wraith's horrifying existence.",
+									{
+										"name": "Vile Oblivion",
+										"type": "entries",
+										"entries": [
+											"When a mortal humanoid lives a debased life or enters into a fiendish pact, it consigns its soul to eternal damnation in the Lower Planes. However, sometimes the soul becomes so suffused with negative energy that it collapses in on itself and ceases to exist the instant before it can shuffle off to some horrible afterlife. When this occurs, the spirit becomes a soulless wraith-a malevolent void trapped on the plane where it died. Almost nothing of the wraith's former existence is preserved; in this new form, it exists only to annihilate other life."
+										]
+									},
+									{
+										"name": "Bereft of Body",
+										"type": "entries",
+										"entries": [
+											"A wraith can move through solid creatures and objects as easily as a mortal creature moves through fog.",
+											"A wraith might retain a few memories of its mortal life as shadowy echoes. However, even the strongest events and emotions become little more than faint impressions, fleeting as half-remembered dreams. A wraith might pause to stare at something that fascinated it in life, or it might curb its wrath in acknowledgment of a past friendship. Such moments come rarely, however, because most wraiths despise what they were as a reminder of what they have become."
+										]
+									},
+									{
+										"name": "Undead Commanders",
+										"type": "entries",
+										"entries": [
+											"A wraith can make an undead servant from the spirit of a humanoid creature that has recently suffered a violent death. Such a fragment of woe becomes a specter, spiteful of all that lives.",
+											"Wraiths sometimes rule the legions of the dead, plotting the doom of living creatures. When they emerge from their tombs to do battle, life and hope shrivel before them. Even if a wraith's armies are forced to retreat, the lands its forces occupied are so blasted and withered that those who live there often starve and die."
+										]
+									},
+									{
+										"name": "Undead Nature",
+										"type": "entries",
+										"entries": [
+											"A wraith doesn't require air, food, drink, or sleep."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "http://wurmcw.ddns.net/5e/img/bestiary/MM/Wraith.jpg"
+						}
+					}
+				]
+			},
+			"shortName": "wraith",
+			"actionTags": [
+				"Multiattack"
+			],
+			"legendary": [
+				{
+					"name": "Vanish",
+					"entries": [
+						"Drakareth casts {@spell invisibility}."
+					]
+				},
+				{
+					"name": "Stride",
+					"entries": [
+						"Drakareth moves up to his speed."
+					]
+				},
+				{
+					"name": "Siphon",
+					"entries": [
+						"Drakareth uses his Life Drain attack."
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Drakareth's innate spellcasting ability is Intelligence (spell save {@dc 16}, +8 to hit with spell attacks). She can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell chill touch}",
+						"{@spell invisibility}",
+						"{@spell message}",
+						"{@spell shield}",
+						"{@spell toll the dead|XGE}"
+					],
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"save": {
+				"wis": "+6",
+				"int": "+9"
+			},
+			"skill": {
+				"stealth": "+8",
+				"deception": "+6",
+				"investigation": "+9",
+				"arcana": "+9"
+			}
+		}
+	]
+}
