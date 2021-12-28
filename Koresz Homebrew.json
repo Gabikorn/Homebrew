@@ -869,6 +869,98 @@
 	"resist": [
 		"psychic"
 	]
+},
+
+		{
+	"name": "Shardling",
+	"source": "Koresz Homebrew",
+	"page": 3,
+	"type": "aberration",
+	"alignment": [
+		"C",
+		"E"
+	],
+	"ac": [
+		{
+			"special": "13"
+		}
+	],
+	"languages": [
+		"Common",
+		"Terran"
+	],
+	"languageTags": [
+		"C",
+		"T"
+	],
+	"damageTags": [
+		"B"
+	],
+	"miscTags": [
+		"MW"
+	],
+	"size": "T",
+	"hp": {
+		"formula": "6d6 + 6",
+		"average": 27
+	},
+	"speed": {
+		"walk": 35
+	},
+	"str": 6,
+	"dex": 17,
+	"con": 12,
+	"int": 11,
+	"wis": 14,
+	"cha": 15,
+	"passive": 12,
+	"cr": "2",
+	"trait": [
+		{
+			"name": "Scamper",
+			"entries": [
+				"The shardling can enter another creature’s space and stop there. While sharing a space with a creature the shardling has advantage on attack rolls against that creature, and that creature’s attacks against the shardling have disadvantage."
+			]
+		},
+		{
+			"name": "Shard-Bound",
+			"entries": [
+				"The shardling maintains a telepathic connection to the Shard of Madness at all times, even on different planes. The Shard of Madness is aware of everything the shardling sees and hears."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Multiattack",
+			"entries": [
+				"Shardling makes two chaos Spines attacks."
+			]
+		},
+		{
+			"name": "Chaos Spines.",
+			"entries": [
+				"{@atk mw} {@hit 5} to hit, reach 0 ft., one creature. {@h}8 ({@damage 2d4 + 3}) bludgeoning damage."
+			]
+		}
+	],
+	"conditionInflictSpell": [
+		"paralyzed",
+		"prone"
+	],
+	"tokenUrl": "https://cdn.discordapp.com/attachments/464812756193902594/925400027675889674/tactical-tokens-custom-token_2.png",
+	"senses": [
+		"blindsight 60 ft. (blind beyond this radius)"
+	],
+	"senseTags": [
+		"B"
+	],
+	"conditionImmune": [
+		"charmed",
+		"frightened"
+	],
+	"actionTags": [
+		"Multiattack"
+	]
 }
 	]
 }
