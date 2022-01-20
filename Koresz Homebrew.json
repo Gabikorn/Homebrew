@@ -1114,7 +1114,7 @@
 		{
 	"name": "Lyra",
 	"source": "Koresz Homebrew",
-	"page": 5,
+	"page": 6,
 	"size": "M",
 	"type": {
 		"type": "humanoid",
@@ -1265,6 +1265,174 @@
 			}
 		]
 	}
+},
+
+				{
+	"name": "Entropic Captain",
+	"environment": [
+		"urban"
+	],
+	"size": "M",
+	"type": {
+		"type": "humanoid",
+		"tags": [
+			"any race"
+		]
+	},
+	"source": "Koresz Homebrew",
+	"alignment": [
+		"L",
+		"N"
+	],
+	"ac": [
+		{
+			"ac": 17,
+			"from": [
+				"{@item scale mail|phb}"
+			]
+		}
+	],
+	"hp": {
+		"formula": "14d8 + 28",
+		"average": 140
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": 13,
+	"dex": 16,
+	"con": 14,
+	"int": 10,
+	"wis": 11,
+	"cha": 13,
+	"skill": {
+		"perception": "+3"
+	},
+	"passive": 13,
+	"languages": [
+		"one language (usually Common)"
+	],
+	"cr": "5",
+	"trait": [
+		{
+			"name": "Tactical Insight",
+			"entries": [
+				"The city watch captain has advantage on initiative rolls. City watch soldiers under the captain's command take their turns on the same initiative count as the captain."
+			]
+		},
+		{
+			"name": "Frightening Appearance",
+			"entries": [
+				"All creatures that start their turn within 30 ft. of an entropic creature must succeed on a {@dc 13} Wisdom saving throw or be {@condition frightened} of it for 10 minutes. An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Creatures that succeed on a saving throw against this ability are immune to this ability for all entropic creatures for one hour."
+			]
+		},
+		{
+			"name": "Entropic mutation",
+			"entries": [
+				"The creature gains a new ability. Unwilling creatures must use this new ability on each of their turns, targeting themselves or, if they can’t target themselves, the nearest ally. Determine the new ability randomly using the following table:",
+				"Roll {@dice 1d6} to decide what ability they get:",
+				"1",
+				"A long tentacle with bony protrusions sprouts from the creature’s back. It can make the following attack once on each of its turns as a bonus action.",
+				"Tentacle. Melee Weapon Attack: {@hit 7} to hit, reach 10 ft., one target. {@h}10 ({@damage 2d6 + 3}) bludgeoning damage and the target must attempt a {@dc 14} Strength saving throw or be knocked {@condition prone}.",
+				"2",
+				"A mouth opens somewhere on the creature’s body and whispers dark truths. The creature gains the following ability it can",
+				"use as a bonus action.",
+				"Foretell. One creature within 30 ft. that is not {@condition deafened} must succeed on a {@dc 14} Wisdom saving throw or suffer a fleeting madness effect ",
+				"3",
+				"A pair of arms emerges from the creature, the hands of which are humanoid but have four fingers that end in sharp claws of blackened bone. The creature can make the following attack once per turn as a bonus action.",
+				"Claws. Melee Weapon Attack: {@hit 7} to hit, reach 5 ft., one target. {@h}10 ({@damage 4d4}) piercing damage and the target is {@condition grappled} (escape {@dc 16}). While {@condition grappled} in this way, the target takes 10 ({@damage 4d4}) piercing damage at the start of each of the entropic creature’s turns and the entropic creature can’t use its claws.",
+				"4",
+				"A writhing, leech-like tendril emerges from somewhere near the creature’s hands or mouth; it darts toward the nearest living creature, eager to sup at its lifeblood. The creature can make the following attack once per turn as a bonus action.",
+				"Bloodleech. Melee Weapon Attack: {@hit 5} to hit, reach 5 ft., one target. {@h}The target loses 11 ({@dice 2d10}) hit points and the entropic creature regains hit points equal to half the damage dealt.",
+				"5",
+				"The creature’s mind is filled with impossible equations and the overwhelming truth of an unfeeling universe. The creature suffers a lasting madness effect that persists until this template is removed. It can use the following ability as a bonus action.",
+				"Carve Mind. One creature within 30 ft. is subjected to a brutal flensing of its psyche. The target must attempt a {@dc 14} Intelligence saving throw. On a failure, it takes 37 ({@damage 2d6}) psychic damage and the next attack roll against it has advantage. ",
+				"6",
+				"The creature grows eight arachnid-like legs from its torso and falls over, landing on its new appendages. It retains the use of its original extremities but prefers to use its new legs for movement. Its speed increases by 10 ft. and it gains a climb speed equal to its new walking speed. It gains the following ability it can use as a bonus action.",
+				"Beckoning Caress. A creature within 5 ft. must succeed on a {@dc 14} Charisma saving throw or be convinced to enter the entropic creature’s embrace. If embraced, the target is {@condition restrained}. If the entropic creature is ever more than 5 ft. away from its target, the effect ends. While the target is {@condition restrained} it takes 7 ({@damage 4d6}) poison damage at the start of each of its turns as it is slowly digested. The target can repeat the Charisma saving throw at the end of each of its turns, freeing itself on a success."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Multiattack",
+			"entries": [
+				"The city watch captain makes two rapier attacks and one dagger attack. The captain can substitute a disarming attack for one rapier attack."
+			]
+		},
+		{
+			"name": "Rapier",
+			"entries": [
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+			]
+		},
+		{
+			"name": "Dagger",
+			"entries": [
+				"{@atk mw,rw} {@hit 6} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage."
+			]
+		},
+		{
+			"name": "Light Crossbow",
+			"entries": [
+				"{@atk rw} {@hit 6} to hit, range 80/320 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage."
+			]
+		},
+		{
+			"name": "Disarming Attack",
+			"entries": [
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}the target must make a successful {@dc 14} Strength saving throw or drop one item it's holding of the city watch captain's choice. The item lands up to 10 feet from the target, in a spot selected by the captain."
+			]
+		},
+		{
+			"name": "Orders to Attack (1/Day)",
+			"entries": [
+				"Each creature of the city watch captain's choice that is within 30 feet of it and can hear it makes one melee or ranged weapon attack as a reaction."
+			]
+		}
+	],
+	"page": 7,
+	"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB/token/City%20Watch%20Captain.png",
+	"fluff": {
+		"images": [
+			{
+				"type": "image",
+				"href": {
+					"type": "external",
+					"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB/City Watch Captain.webp"
+				}
+			}
+		],
+		"entries": [
+			"This person could easily have been on the other side of the law, but he likes the way he looks in the city watch uniform—and the way city residents look at him when he walks down the street leading a patrol. With a long mustache and a jaunty cap, there's no denying that he cuts a rakishly handsome figure. While a trained investigator, the city watch captain is not afraid to draw his blade to end a threat to his city."
+		]
+	},
+	"actionTags": [
+		"Multiattack"
+	],
+	"languageTags": [
+		"C"
+	],
+	"damageTags": [
+		"P",
+		"B",
+		"Y",
+		"I"
+	],
+	"miscTags": [
+		"MW",
+		"RW",
+		"THW",
+		"RNG",
+		"RCH"
+	],
+	"conditionInflict": [
+		"frightened",
+		"grappled",
+		"prone",
+		"restrained"
+	]
 }
 	]
+	
 }
