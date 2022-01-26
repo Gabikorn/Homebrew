@@ -1363,19 +1363,19 @@
 		{
 			"name": "Rapier",
 			"entries": [
-				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 2d6 + 3}) piercing damage."
 			]
 		},
 		{
 			"name": "Dagger",
 			"entries": [
-				"{@atk mw,rw} {@hit 6} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage."
+				"{@atk mw,rw} {@hit 6} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}6 ({@damage 2d4 + 3}) piercing damage."
 			]
 		},
 		{
 			"name": "Light Crossbow",
 			"entries": [
-				"{@atk rw} {@hit 6} to hit, range 80/320 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage."
+				"{@atk rw} {@hit 6} to hit, range 80/320 ft., one target. {@h}7 ({@damage 2d8 + 3}) piercing damage."
 			]
 		},
 		{
@@ -1431,6 +1431,370 @@
 		"grappled",
 		"prone",
 		"restrained"
+	]
+},
+
+
+					{
+	"name": "Ex-Bounty Hunter",
+	"source": "Koresz Homebrew",
+	"size": "M",
+	"type": {
+		"type": "humanoid",
+		"tags": [
+			"any race"
+		]
+	},
+	"alignment": [
+		"A"
+	],
+	"ac": [
+		{
+			"ac": 15,
+			"from": [
+				"{@item studded leather armor|phb}"
+			]
+		}
+	],
+	"hp": {
+		"average": 33,
+		"formula": "5d8 + 10"
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": 10,
+	"dex": 16,
+	"con": 14,
+	"int": 12,
+	"wis": 14,
+	"cha": 10,
+	"save": {
+		"dex": "+5",
+		"int": "+3"
+	},
+	"skill": {
+		"perception": "+4",
+		"stealth": "+7",
+		"survival": "+4"
+	},
+	"passive": 13,
+	"languages": [
+		"any two languages"
+	],
+	"cr": "2",
+	"trait": [
+		{
+			"name": "Assassinate",
+			"entries": [
+				"During its first turn, the bounty hunter has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the bounty hunter scores against a surprised creature is a critical hit."
+			]
+		},
+		{
+			"name": "Cunning Action",
+			"entries": [
+				"The bounty hunter can take the {@action Dash}, {@action Disengage}, or {@action Hide} action as a bonus action on each of its turns."
+			]
+		},
+		{
+			"name": "Nonlethal Strike",
+			"entries": [
+				"If a creature's hit points drop to 0 from the bounty hunter's attack, the bounty hunter can choose to knock the creature {@condition unconscious} at 0 hit points instead of leaving it dying."
+			]
+		},
+		{
+			"name": "Sneak Attack (1/Turn)",
+			"entries": [
+				"The bounty hunter deals an extra 7 ({@dice 2d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the bounty hunter that isn't {@condition incapacitated} and the bounty hunter doesn't have disadvantage on the attack roll."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Rapier",
+			"entries": [
+				"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage."
+			]
+		},
+		{
+			"name": "Light Crossbow",
+			"entries": [
+				"{@atk rw} {@hit 5} to hit, range 30/120 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage."
+			]
+		},
+		{
+			"name": "Hunting Bolas",
+			"entries": [
+				"{@atk rw} {@hit 5} to hit, range 20/60 ft., one creature. {@h}5 ({@damage 1d3 + 3}) bludgeoning damage and the target must succeed on a {@dc 13} Strength saving throw or be {@condition restrained} and knocked {@condition prone}. As an action, the {@condition restrained} creature can make a {@dc 13} Strength check, escaping on a success. The effect ends if the hunting bolas is destroyed. The hunting bolas has AC 10, 5 hit points, resistance to bludgeoning damage, and immunity to poison and psychic damage."
+			]
+		}
+	],
+	"traitTags": [
+		"Sneak Attack"
+	],
+	"languageTags": [
+		"X"
+	],
+	"damageTags": [
+		"P",
+		"B"
+	],
+	"miscTags": [
+		"MW",
+		"RCH",
+		"RW",
+		"RNG"
+	],
+	"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/token/bountyhunter.png",
+	"fluff": {
+		"images": [
+			{
+				"type": "image",
+				"href": {
+					"type": "external",
+					"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/bountyhunter.webp"
+				}
+			}
+		]
+	},
+	"page": 8,
+	"conditionInflict": [
+		"restrained"
+	]
+},
+
+
+			{
+	"name": "Crazed Lumberjack",
+	"source": "Koresz Homebrew",
+	"page": 9,
+	"size": "S",
+	"type": "humanoid",
+	"alignment": [
+		"C",
+		"E"
+	],
+	"ac": [
+		{
+			"ac": 15,
+			"from": [
+				"{@item scale mail|phb}"
+			]
+		}
+	],
+	"hp": {
+		"average": 44,
+		"formula": "8d6 + 16"
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": 16,
+	"dex": 12,
+	"con": 14,
+	"int": 11,
+	"wis": 5,
+	"cha": 9,
+	"skill": {
+		"stealth": "+3"
+	},
+	"senses": [
+		"darkvision 120 ft."
+	],
+	"passive": 7,
+	"languages": [
+		"Common"
+	],
+	"cr": "2",
+	"trait": [
+		{
+			"name": "Magic Resistance",
+			"entries": [
+				"The derro has advantage on saving throws against spells and other magical effects."
+			]
+		},
+		{
+			"name": "Punish the Marked (1/Turn)",
+			"entries": [
+				"As a bonus action, the derro can make a melee weapon attack against a creature marked by it if the creature dealt damage to anyone other than the derro during the last turn. The derro's melee weapon attack has advantage on the attack roll, and if it hits, the attack's weapon deals an extra 3 ({@damage 1d6}) damage to the target."
+			]
+		},
+		{
+			"name": "Sunlight Sensitivity",
+			"entries": [
+				"While in sunlight, the derro has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Multiattack",
+			"entries": [
+				"The derro makes two melee attacks."
+			]
+		},
+		{
+			"name": "Hooked Spear",
+			"entries": [
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage. If the target is Medium or smaller, the derro can choose to deal no damage and knock it {@condition prone}. In either case, the target is marked until the end of the derro's next turn. This effect ends early if the derro is {@condition incapacitated} or it dies, or if someone else marks the target. While it is within 5 feet of the derro, a creature marked by the derro has disadvantage on any attack roll that doesn't target the derro."
+			]
+		},
+		{
+			"name": "Light Crossbow",
+			"entries": [
+				"{@atk rw} {@hit 3} to hit, range 80/320 ft., one target. {@h}5 ({@damage 1d8 + 1}) piercing damage."
+			]
+		}
+	],
+	"traitTags": [
+		"Magic Resistance",
+		"Sunlight Sensitivity"
+	],
+	"senseTags": [
+		"SD"
+	],
+	"actionTags": [
+		"Multiattack"
+	],
+	"languageTags": [
+		"C"
+	],
+	"damageTags": [
+		"P"
+	],
+	"miscTags": [
+		"MW",
+		"RW",
+		"RNG"
+	],
+	"conditionInflict": [
+		"prone"
+	],
+	"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded2/token/derrohookguard.png",
+	"fluff": {
+		"images": [
+			{
+				"type": "image",
+				"href": {
+					"type": "external",
+					"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded2/derrothug.webp"
+				}
+			}
+		]
+	}
+},
+
+
+			{
+	"name": "Chaos crawler",
+	"source": "Koresz Homebrew",
+	"size": "M",
+	"type": "aberration",
+	"alignment": [
+		"U"
+	],
+	"ac": [
+		{
+			"ac": 14,
+			"from": [
+				"natural armor"
+			]
+		}
+	],
+	"hp": {
+		"formula": "6d10 + 18",
+		"average": 51
+	},
+	"speed": {
+		"walk": 40
+	},
+	"str": 18,
+	"dex": 13,
+	"con": 17,
+	"int": 2,
+	"wis": 12,
+	"cha": 5,
+	"skill": {
+		"perception": "+3"
+	},
+	"senses": [
+		"blindsight 10 ft.",
+		"darkvision 60 ft."
+	],
+	"passive": 13,
+	"resist": [
+		"acid"
+	],
+	"languages": [
+		"Draconic"
+	],
+	"cr": "3",
+	"trait": [
+		{
+			"name": "Charge",
+			"entries": [
+				"If the half-dragon moves at least 10 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 7 ({@damage 2d6}) piercing damage. If the target is a Medium or smaller creature, it must succeed on a {@dc 14} Strength saving throw or be pushed up to 10 feet away and knocked {@condition prone}."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Bite",
+			"entries": [
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 4}) piercing Damage."
+			]
+		},
+		{
+			"name": "Gore",
+			"entries": [
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 4}) piercing damage."
+			]
+		},
+		{
+			"name": "Acid Breath {@recharge 5}",
+			"entries": [
+				"The half-dragon exhales acid in a 15- foot line that is 5 feet wide. Each creature in that line must succeed on a {@dc 14} Dexterity saving throw, taking 22 ({@damage 5d8}) acid damage on a failed save, or half as much on a successful one."
+			]
+		}
+	],
+	"traitTags": [
+		"Charge"
+	],
+	"senseTags": [
+		"B",
+		"D"
+	],
+	"languageTags": [
+		"DR"
+	],
+	"damageTags": [
+		"P",
+		"A"
+	],
+	"miscTags": [
+		"MW"
+	],
+	"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/token/halfblackdragonbagaceratops.png",
+	"fluff": {
+		"images": [
+			{
+				"type": "image",
+				"href": {
+					"type": "external",
+					"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/halfblackdragonbagaceratops.webp"
+				}
+			}
+		]
+	},
+	"actionTags": [
+		"Breath Weapon"
+	],
+	"page": 10,
+	"conditionInflict": [
+		"prone"
+	],
+	"conditionImmune": [
+		"frightened"
 	]
 }
 	]
